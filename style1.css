@@ -1,20 +1,32 @@
-blockquote {
+span {
 	position: relative;
 	display: none;
 	border-radius: 8px;
-	padding: 8px;
+	padding: 5px;
 	text-align: center;
 	line-height: 1.5em;
 	color: #fff;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(255,255,255);
+	border: .25px solid #333333;
 }
-blockquote .notch {
+span h1 {
+    font-size: 20px;
+    margin-top: 12px;
+    color: #333333;
+}
+span p {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-style: italic;
+	color: #333333;
+}
+span .notch {
     position: absolute;
     padding: 0;
     width: 0;
     height: 0;
 }
-blockquote .notch-top {
+span .notch-top {
     top: -10px;
     left: 50%;
     margin-left: -10px;
@@ -23,7 +35,7 @@ blockquote .notch-top {
     border-bottom: 10px solid rgba(0,0,0,0.7);
     border-left: 10px solid transparent;
 }
-blockquote .notch-right {
+span .notch-right {
 	top: 50%;
 	right: -10px;
 	margin-top: -10px;
@@ -32,7 +44,7 @@ blockquote .notch-right {
     border-bottom: 10px solid transparent;
     border-left: 10px solid rgba(0,0,0,0.7);
 }
-blockquote .notch-bottom {
+span .notch-bottom {
 	bottom: -10px;
 	left: 50%;
 	margin-left: -10px;
@@ -41,7 +53,7 @@ blockquote .notch-bottom {
     border-bottom: 0;
     border-left: 10px solid transparent;
 }
-blockquote .notch-left {
+span .notch-left {
 	top: 50%;
 	left: -10px;
     margin-top: -10px;
@@ -54,9 +66,9 @@ img {
 	display: block;
 	width: 100%;
 }
-.hotspot-demo-1-left {
+.hotspot-left {
 	position: relative;
-	width: 50%;
+	width: 75%;
 }
 .spots {
 	position: absolute;
@@ -67,16 +79,16 @@ img {
 }
 .spot {
     position: absolute;
-  	text-align: center;
-  	line-height: 32px;
+	text-align: center;
+	line-height: 32px;
     font-size: 32px;
-  	font-weight: bold;
-  	color: #fff;
+	font-weight: bold;
+	color: #fff;
     width: 32px;
     height: 32px;
-	border: 1px solid #5FB404;
+	border: 1px solid #366603;
 	border-radius: 16px;
-	background-color: #5FB404;
+	background-color: #5fb404;
 }
 .spot:hover {
     -webkit-transform: rotate(45deg);
@@ -89,33 +101,58 @@ img {
 	display: inline-block;
 	min-width: 250px;
 }	
+#spot-01:hover > span, #spot-02:hover > span, #spot-03:hover > span, #spot-04:hover > span, #spot-05:hover > span, #spot-06:hover > span, #spot-07:hover > span, #spot-08:hover > span {
+	display: block;
+	top: 45%;
+	left: -15%
+}
 #spot-01 {
 	position: absolute;
-    top: 65%;
-    left: 78%;
-}
-#spot-01:hover > blockquote {
-	display: block;
-	top: -16px;
-	left: -91%
+    top: 40%;
+    left: 27%;
 }
 #spot-02 {
 	position: absolute;
     top: 28%;
-    left: 57%;
+    left: 40%;
 }
-#spot-02:hover > blockquote {
+/* #spot-02:hover > span {
 	display: block;
 	top: 36px;
 	left: -43%;
-}
+} */
 #spot-03 {
 	position: absolute;
-    top: 45%;
-    left: 20%;
+    top: 28%;
+    left: 56%;
 }
-#spot-03:hover > blockquote {
+/* #spot-03:hover > span {
 	display: block;
     top: -16px;
     left: 18px;
+} */
+#spot-04 {
+	position: absolute;
+    top: 40%;
+    left: 68%;
+}
+#spot-05 {
+	position: absolute;
+    top: 55.5%;
+    left: 67%;
+}
+#spot-06 {
+	position: absolute;
+    top: 67%;
+    left: 55%;
+}
+#spot-07 {
+	position: absolute;
+    top: 67%;
+    left: 40%;
+}
+#spot-08 {
+	position: absolute;
+    top: 55%;
+    left: 28%;
 }
