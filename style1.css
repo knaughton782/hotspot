@@ -7,18 +7,18 @@ span {
 	line-height: 1.5em;
 	color: #fff;
 	background-color: rgba(255,255,255);
-	border: .25px solid #333333;
+	border: .25px solid #004990;
 }
 span h1 {
     font-size: 20px;
     margin-top: 12px;
-    color: #333333;
+    color: #004990;;
 }
 span p {
     margin-top: 4px;
     margin-bottom: 12px;
     font-style: italic;
-	color: #333333;
+	color: #004990;;
 }
 span .notch {
     position: absolute;
@@ -68,7 +68,7 @@ img {
 }
 .hotspot-left {
 	position: relative;
-	width: 75%;
+	width: 78%;
 }
 .spots {
 	position: absolute;
@@ -103,38 +103,39 @@ img {
 }	
 #spot-01:hover > span, #spot-02:hover > span, #spot-03:hover > span, #spot-04:hover > span, #spot-05:hover > span, #spot-06:hover > span, #spot-07:hover > span, #spot-08:hover > span {
 	display: block;
-	top: 45%;
-	left: -15%
+	z-index: 1;
 }
 #spot-01 {
 	position: absolute;
     top: 40%;
     left: 27%;
 }
+#spot-01:hover > span {
+	top: 50%;
+	left: -20%;
+}
 #spot-02 {
 	position: absolute;
     top: 28%;
     left: 40%;
 }
-/* #spot-02:hover > span {
-	display: block;
-	top: 36px;
-	left: -43%;
-} */
+#spot-02:hover > span {
+	top: 25%;
+	left: -23%;
+}
 #spot-03 {
 	position: absolute;
     top: 28%;
     left: 56%;
 }
-/* #spot-03:hover > span {
-	display: block;
-    top: -16px;
-    left: 18px;
-} */
+#spot-03:hover > span {
+    top: 50%;
+    left: -30%;
+}
 #spot-04 {
 	position: absolute;
     top: 40%;
-    left: 68%;
+    left: 67%;
 }
 #spot-05 {
 	position: absolute;
@@ -143,7 +144,7 @@ img {
 }
 #spot-06 {
 	position: absolute;
-    top: 67%;
+    top: 66%;
     left: 55%;
 }
 #spot-07 {
