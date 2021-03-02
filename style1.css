@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+/* .hotspots {
+    margin: 20px;
+} */
 span {
 	position: relative;
 	display: none;
@@ -10,13 +16,13 @@ span {
 	border: .25px solid #004990;
 }
 span h1 {
-    font-size: 20px;
-    margin-top: 12px;
+    font-size: 16px;
+    /* margin-top: 5px; */
     color: #004990;;
 }
 span p {
     margin-top: 4px;
-    margin-bottom: 12px;
+    /* margin-bottom: 10px; */
     font-style: italic;
 	color: #004990;;
 }
@@ -68,7 +74,7 @@ img {
 }
 .hotspot-left {
 	position: relative;
-	width: 78%;
+	width: 100%;
 }
 .spots {
 	position: absolute;
@@ -97,9 +103,10 @@ img {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-#spot-01, #spot-02, #spot-03 {
+#spot-01, #spot-02, #spot-03, #spot-04, #spot-05, #spot-06, #spot-07, #spot-08  {
 	display: inline-block;
-	min-width: 250px;
+	/* min-width: 250px; */
+	max-width: 200px;
 }	
 #spot-01:hover > span, #spot-02:hover > span, #spot-03:hover > span, #spot-04:hover > span, #spot-05:hover > span, #spot-06:hover > span, #spot-07:hover > span, #spot-08:hover > span {
 	display: block;
@@ -111,49 +118,76 @@ img {
     left: 27%;
 }
 #spot-01:hover > span {
-	top: 50%;
-	left: -20%;
+	top: -155px;
+	left: -200px;
 }
+/* *************************  */
 #spot-02 {
 	position: absolute;
     top: 28%;
     left: 40%;
 }
 #spot-02:hover > span {
-	top: 25%;
-	left: -23%;
+    top: -155px;
+	left: -70%;
 }
+/* *************************  */
 #spot-03 {
 	position: absolute;
     top: 28%;
     left: 56%;
 }
 #spot-03:hover > span {
-    top: 50%;
-    left: -30%;
+    top: -160px;
+    left: -20%;
 }
+/* *************************  */
 #spot-04 {
 	position: absolute;
     top: 40%;
     left: 67%;
 }
+#spot-04:hover > span {
+    top: -130px;
+    left: 20%;
+}
+/* *************************  */
 #spot-05 {
 	position: absolute;
     top: 55.5%;
     left: 67%;
 }
+#spot-05:hover > span {
+    top: -20px;
+    left: 20%;
+}
+/* *************************  */
 #spot-06 {
 	position: absolute;
-    top: 66%;
+    top: 67%;
     left: 55%;
 }
+#spot-06:hover > span {
+    top: 40px;
+    left: 5%;
+}
+/* *************************  */
 #spot-07 {
 	position: absolute;
     top: 67%;
     left: 40%;
 }
+#spot-07:hover > span {
+    top: 40px;
+    left: -40%;
+}
+/* *************************  */
 #spot-08 {
 	position: absolute;
     top: 55%;
     left: 28%;
+}
+#spot-08:hover > span {
+    top: 40px;
+    left: -80%;
 }
