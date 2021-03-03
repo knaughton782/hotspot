@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+/* .hotspots {
+    margin: 20px;
+} */
+span {
+	position: relative;
+	display: none;
+	border-radius: 8px;
+	padding: 5px;
+	text-align: center;
+	line-height: 1.5em;
+	color: #fff;
+	background-color: rgba(255,255,255);
+	border: .25px solid #004990;
+}
+span h1 {
+    font-size: 16px;
+    /* margin-top: 5px; */
+    color: #004990;;
+}
+span p {
+    margin-top: 4px;
+    /* margin-bottom: 10px; */
+    font-style: italic;
+	color: #004990;;
+}
+span .notch {
+    position: absolute;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+span .notch-top {
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-top: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0,0.7);
+    border-left: 10px solid transparent;
+}
+span .notch-right {
+	top: 50%;
+	right: -10px;
+	margin-top: -10px;
+    border-top: 10px solid transparent;
+    border-right: 0;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(0,0,0,0.7);
+}
+span .notch-bottom {
+	bottom: -10px;
+	left: 50%;
+	margin-left: -10px;
+    border-top: 10px solid rgba(0,0,0,0.7);
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    border-left: 10px solid transparent;
+}
+span .notch-left {
+	top: 50%;
+	left: -10px;
+    margin-top: -10px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid rgba(0,0,0,0.7);
+    border-bottom: 10px solid transparent;
+    border-left: 0;
+}
+img {
+	display: block;
+	width: 100%;
+}
+.hotspot-left {
+	position: relative;
+	width: 100%;
+}
+.spots {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.spot {
+    position: absolute;
+	text-align: center;
+	line-height: 32px;
+    font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+    width: 32px;
+    height: 32px;
+	border: 1px solid #366603;
+	border-radius: 16px;
+	background-color: #5fb404;
+}
+.spot:hover {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#spot-01, #spot-02, #spot-03, #spot-04, #spot-05, #spot-06, #spot-07, #spot-08  {
+	display: inline-block;
+	/* min-width: 250px; */
+	max-width: 200px;
+}	
+#spot-01:hover > span, #spot-02:hover > span, #spot-03:hover > span, #spot-04:hover > span, #spot-05:hover > span, #spot-06:hover > span, #spot-07:hover > span, #spot-08:hover > span {
+	display: block;
+	z-index: 1;
+}
+#spot-01 {
+	position: absolute;
+    top: 40%;
+    left: 27%;
+}
+#spot-01:hover > span {
+	top: -155px;
+	left: -200px;
+}
+/* *************************  */
+#spot-02 {
+	position: absolute;
+    top: 28%;
+    left: 40%;
+}
+#spot-02:hover > span {
+    top: -155px;
+	left: -70%;
+}
+/* *************************  */
+#spot-03 {
+	position: absolute;
+    top: 28%;
+    left: 56%;
+}
+#spot-03:hover > span {
+    top: -160px;
+    left: -20%;
+}
+/* *************************  */
+#spot-04 {
+	position: absolute;
+    top: 40%;
+    left: 67%;
+}
+#spot-04:hover > span {
+    top: -130px;
+    left: 20%;
+}
+/* *************************  */
+#spot-05 {
+	position: absolute;
+    top: 55.5%;
+    left: 67%;
+}
+#spot-05:hover > span {
+    top: -20px;
+    left: 20%;
+}
+/* *************************  */
+#spot-06 {
+	position: absolute;
+    top: 67%;
+    left: 55%;
+}
+#spot-06:hover > span {
+    top: 40px;
+    left: 5%;
+}
+/* *************************  */
+#spot-07 {
+	position: absolute;
+    top: 67%;
+    left: 40%;
+}
+#spot-07:hover > span {
+    top: 40px;
+    left: -40%;
+}
+/* *************************  */
+#spot-08 {
+	position: absolute;
+    top: 55%;
+    left: 28%;
+}
+#spot-08:hover > span {
+    top: 40px;
+    left: -80%;
+}
